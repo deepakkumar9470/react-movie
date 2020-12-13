@@ -1,18 +1,17 @@
 import React, {useState} from 'react'
 import './App.css';
-import axios from 'axios'
+import axios from 'axios';
 import Search from './components/Search';
-import Result from './components/Results'
-import Popup from './components/Popup'
+import Result from './components/Results';
+import Popup from './components/Popup';
 function App() {
-
   const [movie, setMovie] = useState({
       s :"",
       results : [], 
       selected : {}
   })
 
-  const apiurl = 'http://www.omdbapi.com/?apikey=ad838f9b'
+  const apiurl = 'https://www.omdbapi.com/?apikey=ad838f9b'
 
    const searchInput = (e) =>{
      if(e.key === "Enter") {
